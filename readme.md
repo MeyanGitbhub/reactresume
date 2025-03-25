@@ -1,4 +1,6 @@
-React Resume.
+## React Resume.
+
+Simple react application that uses react-router and components to build a resume display application.
 
 ## Getting Started
 
