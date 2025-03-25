@@ -3,8 +3,8 @@ import type { Route } from "./+types/resume-react";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "React Resume" },
+    { name: "description", content: "React Resume" },
   ];
 }
 

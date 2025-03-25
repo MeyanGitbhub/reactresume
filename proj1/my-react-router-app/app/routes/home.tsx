@@ -1,12 +1,10 @@
-// import type { Route } from "./+types/home";
 import type { Route } from "../+types/root";
-// import { Welcome } from "../welcome/welcome";
 import ResumeReact from "./resume-react";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "B.J. Wright React Resume" },
+    { name: "description", content: "React Resume" },
   ];
 }
 
