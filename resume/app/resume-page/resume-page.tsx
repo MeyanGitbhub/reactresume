@@ -7,10 +7,10 @@ export function ResumePage() {
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
       <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
-        <p className="leading-6 text-3xl text-gray-700 dark:text-gray-200 text-center">
+        <p className="leading-6 text-3xl text-gray-700 dark:text-gray-200 text-center" >
           B.J. Wright Resume
         </p>
-        <div className="w-full space-y-6 px-4">
+        <div className="w-full space-y-6 px-4 max-w-7xl">
           <ResumeIntro></ResumeIntro>
         </div>
         <div className="w-full space-y-6 px-4">
