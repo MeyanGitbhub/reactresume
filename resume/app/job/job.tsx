@@ -43,7 +43,7 @@ const jobs = [
   },
   {
     id: 1,
-    jobTitle: 'Cloud Develope',
+    jobTitle: 'Cloud Developer',
     companyName: 'Applied Insight',
     jobDescription: ['Created Reports module utilizing data frameworks such as Plotly to allow customers to visualize and quickly analyze critical data points. ',
       'Delivered 3 major modules for application on time, writing over 40% of the source code.',
