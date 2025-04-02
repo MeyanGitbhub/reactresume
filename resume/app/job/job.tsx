@@ -1,6 +1,6 @@
 export function Job() {
   return (
-    <main className="flex items-center justify-center pt-16 pb-4">
+    <div className="flex items-center justify-center pt-16 pb-4">
       <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
         {jobs.map(({ id, jobTitle, companyName, jobDescription}) => (
           <div className="max-w-[700px] w-full space-y-6 px-4" key={jobTitle + "-" + id}>
@@ -26,7 +26,7 @@ export function Job() {
         ))}
 
       </div>
-    </main>
+    </div>
   );
 }
 
