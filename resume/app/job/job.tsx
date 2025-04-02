@@ -48,7 +48,7 @@ const jobs = [
     jobDescription: ['Created Reports module utilizing data frameworks such as Plotly to allow customers to visualize and quickly analyze critical data points. ',
       'Delivered 3 major modules for application on time, writing over 40% of the source code.',
       'Led and participated in agile processes, fostering continuous team improvement.',
-      ' Implemented CI/CD pipelines and automated deployment workflows using Jenkins and GitHub Actions, enhancing development efficiency across multiple platforms.'],
+      'Implemented CI/CD pipelines and automated deployment workflows using Jenkins and GitHub Actions, enhancing development efficiency across multiple platforms.'],
 
   },
   {
