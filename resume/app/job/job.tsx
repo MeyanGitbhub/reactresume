@@ -33,32 +33,32 @@ export function Job() {
 const jobs = [
   {
     id: 0,
-    jobTitle: 'Lead Front End Developer',
+    jobTitle: 'Front End Lead Engineer',
     companyName: 'Robbins-Gioia',
-    jobDescription: ['Led front-end development for the Lynx MRO Application, ensuring high performance and maintainability. ',
-      'Implement asynchronous programming techniques to optimize data handling and API communication. ',
-      'Established code review standards, improving team cross-training and overall code quality.',
-      'Conduct software demonstrations for stakeholders and potential customers, enhancing product visibility. '],
+    jobDescription: ['Built front end from ground up allowing Robbins-Gioia to increase customer base by selling a commercial MRO product. ',
+      'Reduced defects by 30% by utilizing integration tests for front end modules.',
+      'Led team of developers, where I set standards, and performed code reviews to create consistent, working software.',
+      'Selected as a High Performing Employee, created a plan to utilize Machine Learning in MRO products.  '],
 
   },
   {
     id: 1,
-    jobTitle: 'Senior Software Engineer',
+    jobTitle: 'Cloud Develope',
     companyName: 'Applied Insight',
-    jobDescription: ['Developed dynamic web applications using Angular, improving UI/UX and responsiveness.',
-      'Enhanced code quality with Cypress-based integration testing suites. ',
+    jobDescription: ['Created Reports module utilizing data frameworks such as Plotly to allow customers to visualize and quickly analyze critical data points. ',
+      'Delivered 3 major modules for application on time, writing over 40% of the source code.',
       'Led and participated in agile processes, fostering continuous team improvement.',
-      'Designed interactive reports with Plotly, translating complex data into visual insights.'],
+      ' Implemented CI/CD pipelines and automated deployment workflows using Jenkins and GitHub Actions, enhancing development efficiency across multiple platforms.'],
 
   },
   {
     id: 2,
     jobTitle: 'Senior Software Engineer',
     companyName: 'GDIT',
-    jobDescription: ['Built and maintained web applications using Spring Framework for enterprise solutions.',
-      'Designed and developed RESTful web services, ensuring efficient API integration.',
+    jobDescription: ['Built and designed micro service applications that interface with multiple front ends.',
+      'Took ownership of full stack application refactoring legacy systems and creating new applications to meet customer requirements. ',
       'Managed SQL Server and Oracle databases using Hibernate ORM.',
-      'Developed Jenkins CI/CD pipelines, automating deployment workflows.'],
+      'Designed and developed RESTful web services, ensuring efficient API integration. '],
 
   },
   {
@@ -72,7 +72,7 @@ const jobs = [
     id: 4,
     jobTitle: 'Software Developer',
     companyName: 'Rosetta Stone',
-    jobDescription: ['Designed and developed mobile application components for live video tutoring platforms.',],
+    jobDescription: [' Developed and debugged Rosetta Stone Studio video tutoring system. ', 'Wrote and Tested software that transitioned Rosetta Stone from CD product to Online Tutoring System. '],
 
   },
   {
