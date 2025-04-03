@@ -1,19 +1,19 @@
-export function Job({ jobs }: { jobs: JobItem[] }) {
+export function Job({ job }: { job: JobItem}) {
   return (
     <div className="flex items-center justify-center pt-16 pb-4">
       <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
-        {jobs.map(({ id, jobTitle, companyName, jobDescription}) => (
-          <div className="max-w-[700px] w-full space-y-6 px-4" key={jobTitle + "-" + id}>
+        {/* {jobs.map(({ id, jobTitle, companyName, jobDescription}) => ( */}
+          <div className="max-w-[700px] w-full space-y-6 px-4" key={job.jobTitle + "-" + job.id}>
             <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
               <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
-                {jobTitle} | {companyName}
+                {job.jobTitle} | {job.companyName}
               </p>
               <div> </div>
               <ul>
                 <div>
                   <div>
-                    {jobDescription.map((jobDescription, i) =>
-                      <li className="mb-2" key={jobTitle + '-' +  i}>
+                    {job.jobDescription.map((jobDescription, i) =>
+                      <li className="mb-2" key={job.jobTitle + '-' +  i}>
                         {jobDescription}
                       </li>
                     )}
@@ -23,7 +23,7 @@ export function Job({ jobs }: { jobs: JobItem[] }) {
               </ul>
             </nav>
           </div>
-        ))}
+        {/* ))} */}
 
       </div>
     </div>

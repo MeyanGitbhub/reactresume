@@ -15,7 +15,9 @@ export function ResumePage() {
         </div>
         <div className="w-full space-y-6 px-4 max-w-7xl">
           <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4 ">
-            <Job jobs={jobs}></Job>
+            {jobs.map((job) => (
+              <Job job={job}></Job>
+            ))}
           </nav>
         </div>
       </div>
