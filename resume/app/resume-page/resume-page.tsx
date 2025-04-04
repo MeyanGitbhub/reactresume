@@ -1,6 +1,7 @@
 import { Job, type JobItem } from "~/job/job";
 import { ResumeIntro } from "~/resume-intro/resume-intro";
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 
 export function ResumePage() {
   const [name, setName] = useState("")
@@ -44,6 +45,7 @@ export function ResumePage() {
         <p className="leading-6 text-3xl text-gray-700 dark:text-gray-200 text-center" >
           {name}
         </p>
+        <Link to="/contact">Contact Me</Link>
         <div className="w-full space-y-6 px-4 max-w-7xl">
           <ResumeIntro></ResumeIntro>
         </div>
