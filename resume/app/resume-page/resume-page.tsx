@@ -1,9 +1,43 @@
 import { Job, type JobItem } from "~/job/job";
 import { ResumeIntro } from "~/resume-intro/resume-intro";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function ResumePage() {
-  const name = 'B.J. Wright';
+  const [name, setName] = useState("")
+  const [isLoading, setIsLoading] = useState(true);
+
+
+  useEffect(() => {
+    console.log('B.J. Wright React Resume useEffect');
+    // if render is interupted before fetch is complete use AbortController to cancel request.
+    const controller = new AbortController();
+    const signal = controller.signal;
+
+
+    const fetchName = async () => {
+      try {
+        const result = await getResumeNameData(signal);
+        setName(result);
+      } catch (error) {
+        console.log('error: ', error);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    fetchName();
+
+    return () => {
+      // remove subscriptions
+      console.log('Cleanup Function');
+      controller.abort();
+    };
+  }, []);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
       <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
@@ -25,6 +59,22 @@ export function ResumePage() {
   );
 }
 
+// Fake API call Will always return B.J. Wright, just wanted to test hitting an endpoint.
+async function getResumeNameData(signal: AbortSignal): Promise<string> {
+  const response = await fetch("https://jsonplaceholder.typicode.com/users/1", { signal });
+  const data = await response.json();
+  console.log('data fetched: ', data);
+  if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+
+  if (data.name !== "B.J. Wright") {
+    return "B.J. Wright";
+  } else {
+    return data.name;
+  }
+
+}
 
 const jobs: JobItem[] = [
   {
