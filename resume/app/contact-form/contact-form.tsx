@@ -7,11 +7,12 @@ export function ContactForm() {
     name: '',
     phone: '',
     email: '',
+    message: '',
   });
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
 
     const { name, value } = event.target;
 
@@ -26,7 +27,7 @@ export function ContactForm() {
     console.log('form submitted: ', formData);
     setSubmitted(true);
 
-    setFormData({ name: '', email: '', phone: '' });
+    setFormData({ name: '', email: '', phone: '', message: '' });
     //send data to backend
   };
 
@@ -75,6 +76,16 @@ export function ContactForm() {
             value={formData.phone}
             onChange={handleChange}
             className="w-full border border-gray-300 dark:border-gray-600 rounded-lg p-2 dark:bg-gray-900 dark:text-white"
+          />
+        </div>
+        <div>
+          <label className="block mb-1 text-gray-700 dark:text-gray-300">Message:</label>
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            rows={6} 
+            className="w-full border border-gray-300 dark:border-gray-600 rounded-lg p-2 dark:bg-gray-900 dark:text-white resize-none"
           />
         </div>
         <button
